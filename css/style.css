@@ -318,32 +318,37 @@ nav .social-links a:last-child{
 .about-container{
     padding: var(--global-padding);
 }
-
 .about-container .about-title{
+    display: flex;
+    border-bottom: 1px solid #cacaca;
+}
+
+.about-container .about-title .about-title-text{
     display: flex;
     flex-direction: column;
     line-height: 0.9;
-    background: url(../img/vectors/hang-out-vector.svg);
-    background-repeat: no-repeat;
-    background-position: left 9vw;
-    background-size: 45vw;
 }
 
-.about-container .about-title span:nth-child(1){
+.about-container .about-title .about-title-text span:nth-child(1){
     font-size: 14vw;
     font-weight: 600;
 }
 
-.about-container .about-title strong:nth-child(2){
+.about-container .about-title .about-title-text strong:nth-child(2){
     font-size: 15vw;
     font-weight: 400;
 }
 
-.about-container .about-title span:nth-child(3){
-    padding-bottom: 20px;
+.about-container .about-title .about-title-text span:nth-child(3){
     font-size: 16.5vw;
     font-weight: 100;
-    border-bottom: 1px solid #cacaca;
+}
+
+.about-container .about-title img{
+    width: 100%;
+    margin-bottom: -0.1vh;
+    margin-top: auto;
+    object-fit: contain;
 }
 
 .about-container .about-second-title{
@@ -736,12 +741,12 @@ input::placeholder{
 
     .about-container .about-title{
         display: block;
-        width: 82.5%;
+        width: 75%;
         font-size: 5vw;
         padding: 28.9vh 0px 1.5vh 0px;
         border-bottom: 1px solid #cacaca;
-        background-position: bottom -0.4vh left;
-        background-size: 23vw;
+        background-position: bottom -0.5vh left;
+        background-size: 22.2vw;
     }
 
     .about-container .about-title span:nth-child(1){
