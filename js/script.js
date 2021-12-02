@@ -21,7 +21,7 @@ template.innerHTML = `
                     .event-card{
                         display: flex;
                         flex-direction: column;
-                        width: 22vw; 
+                        width: 48vw; 
                         margin-left: 2vw;
                         line-height: 1.8;
                         border-top-right-radius: 20px;
