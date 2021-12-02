@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/script.js" defer></script>
+    <title>Luna Coffee Shop</title>
+</head>
+<body>
+    <div class="root">
+
+        <div class="hero">
+            <header>
+                <nav>
+                    <div class="menu-container">
+                        <label for="menu-btn" data-desktop-display="false"></label>
+                        <button data-mobile-display="false">תפריט</button>
+                        <a href="" data-mobile-display="false">דרושים</a>
+                        <a href="" data-mobile-display="false">תרבות</a>
+                        <a href="" data-mobile-display="false">אודות</a>
+                    </div>
+
+                    <!-- hidden checkbox -->
+                    <input type="checkbox" name="menu-btn" id="menu-btn">
+
+                    <div class="social-links">
+                        <a href="tel:+972543397611" class="" data-mobile-display="false"></a>
+                        <a href="" class="social-media-icon"></a>
+                        <a href="" class="social-media-icon"></a>
+                    </div>                    
+                    
+                    
+                    <!-- side navbar -->
+                    <div class="side-menu">
+                        <ul>
+                            <li>
+                                <a href="">תפריט</a>
+                            </li>
+                            <li>
+                                <a href="">תרבות בלודה</a>
+                            </li>
+                            <li>
+                                <a href="">דרושים</a>
+                            </li>
+                            <li>
+                                <a href="">צור קשר</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <img class="luda-logo" src="./img/logos/bw-luda-logo.svg" alt="">
+
+            <button class="menu-btn">MENU</button>
+
+            <span class="scroll-arrow" data-desktop-display="false"></span>
+        </div>
+
+        <div class="colture-events-container">
+            <div class="title">
+                <span>תרבות</span>
+                <span>בלודה</span>
+            </div>
+            <div class="events-slider">
+                <!-- events from WC -->
+                <event-card img-src="img/others/adir-miller.svg" date="13.11.21" time="20:00 - 21:30" event-type="הרצאה" artist="שחר חסון" cost= "500"></event-card>
+                <event-card img-src="img/others/adir-miller.svg" date="13.11.21" time="20:00 - 21:30" event-type="הרצאה" artist="שחר חסון" cost= "500"></event-card>
+                <event-card img-src="img/others/adir-miller.svg" date="13.11.21" time="20:00 - 21:30" event-type="הרצאה" artist="שחר חסון" cost= "500"></event-card>
+            </div>
+            <span class="entry">*הכניסה מיועדת לכל הגילאים</span>
+        </div>
+
+        <div class="about-container">
+            <div class="about-title">
+                <span>מי</span>
+                <strong>אנחנו</strong>
+                <span>בעצם?</span>
+            </div>
+
+            <div class="about-second-title bold">קפה לודה יוצא לדרך!</div>
+            
+            <div class="about-description">
+                <div class="non-bold">
+                    בעיר לוד חיים כ-80 אלף תושבים. מכל הגילאים,
+                    העדות והתרבויות שיש בישראל. לתושבים האלה
+                    מגיע מקום שהוא אוויר לנשימה - מקום לבילויים ולמפגש, לחיבור ולשיח, במיוחד בתקופה המאוד מורכבת הזו.
+                </div>
+                
+                <div>
+                    אנחנו הסטודנטים שגרים בעיר, החלטנו להקים בית קפה קהילתי - חברתי, 
+                    <strong>"קפה לודה".</strong>
+                </div>
+
+                <div>
+                    <p>קפה לודה הוא המקום של כולנו.</p>
+                    מקום שנותן הזדמנות לנוער וצעירים בעיר לעבוד
+                    <p class="bold">בתעסוקה מוגנת.</p>
+                    מקום שמניח בצד את הפוליטיקה, הסכסוך והבעיות ושם דגש על החיובי, הנורמלי
+                    <strong>והחיים עצמם.</strong>
+                </div>
+
+                <div>
+                    <strong>הקפה</strong>
+                    - הוא מחבר את כולנו.
+                    <br>
+                    <strong>הקפה</strong>
+                    - הוא רגע הנחת שלנו ביום, בלי שום טרדות...
+                </div>
+            </div>
+
+            <div class="donate-box">
+                <p>רוצים לקחת חלק במיזם תרבותי
+                    <br>
+                    שכיף להיות שותפים לו?
+                </p>
+
+                <strong>תרמו לנו!</strong>
+
+                <button class="donate-btn">לתרומה לחץ כאן</button>
+            </div>
+
+            <div class=""> 
+                <img src="./img/logos/luda-logo.svg" alt="">
+                <br>
+                <p>צוות הקפה יעסיק צעירים עם מוגבלות מעמותת גוונים ונוער בסיכון,
+                    תוך ליווי מקצועי ורגיש לצרכים במטרה לספק כלים לתעסוקה בשוק החופשי.
+                </p>
+            </div>
+        </div>
+       
+        <div class="contact-container">
+            <div class="contact-title">
+                <strong>מחפשים עבודה?</strong>
+                <span class="second-title">הצטרפו אלינו לצוות!</span>
+            </div>
+
+            <div class="form-container">
+                <form action="" method="get">
+                    <label for="name">
+                        <strong>שם מלא</strong>
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="כתוב כאן">
+                    <label for="phone">
+                        <strong>טלפון</strong>
+                    </label>
+                    <input type="tel" name="phone" id="phone" placeholder="הכנס מספר">
+                    <button type="submit">נעים מאוד, צרו איתי קשר</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="idea-description">
+            <div>
+                <div>
+                    <strong>בשביל מה?</strong>
+                    <p data-mobile-display="false">בשבילנו</p>
+                    <br>
+                    <p>
+                        לתת מקום של תרבות ושילוב למרקם האנושי 
+                        המגוון שחי היום בעיר לוד. אנו מאמינים שמהלך
+                        זה יחבר עוד יותר בין תושבי העיר. בואו להיות!    
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <strong>למה עכשיו?</strong>
+                    <br>
+                    <p>
+                        כי יש 80 אלף תושבים בעיר ואין כאן
+                        בית קפה. הגיע הזמן להקים וליצור יחד מקום
+                        בילוי נעים, איכותי וייחודי שלא היה כאן קודם לכן.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="bottom-container">
+            <div class="moments">
+                <span>רגעים</span>
+                <p>בקפה</p>
+                
+                <div class="gallery">
+                    <img src="./img/moments/img3.svg" alt="">
+                    <img src="./img/moments/img2.svg" alt="">
+                    <img src="./img/moments/img1.svg" alt="">
+                    <img src="./img/moments/img5.svg" alt="">
+                    <img src="./img/moments/img4.svg" alt="">
+                </div>
+            </div>
+
+            <button class="top-page">חזור למעלה</button>
+
+            <div class="contact">
+                <a href="tel:+972543397611"></a>
+                <a href="" class="fb"></a>
+                <a href="" class="ig"></a>
+            </div>
+        
+            <div class="logos">
+                <img src="./img/logos/luda-logo.svg" alt="">
+                <img src="./img/logos/lod-logo.svg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
