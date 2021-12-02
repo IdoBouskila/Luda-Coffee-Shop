@@ -14,14 +14,14 @@ function _(selector){
 
 
 const template = document.createElement('template');
-
+//  48 vw
 template.innerHTML = `
 
                     <style>
                     .event-card{
                         display: flex;
                         flex-direction: column;
-                        width: 48vw;
+                        width: 22vw; 
                         margin-left: 2vw;
                         line-height: 1.8;
                         border-top-right-radius: 20px;
