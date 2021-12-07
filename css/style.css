@@ -1,8 +1,8 @@
 :root{
     --main-text-color: #402615;
-    --event-background-color: linear-gradient(180deg, #C29E68 16.71%, rgba(217, 168, 96, 0.87) 28.61%, #D9A860 100%);
+    --event-background-color: linear-gradient(#DCB06F, #DCB06F);
     --global-padding: 4.75vw;
-    --bottom-background-color: #DDD6A0;
+    --bottom-background-color: #E6CC9B;
     --milk-color:#f4efea;
 }
 
@@ -318,6 +318,7 @@ nav .social-links a:last-child{
 .about-container{
     padding: var(--global-padding);
 }
+
 .about-container .about-title{
     display: flex;
     border-bottom: 1px solid #cacaca;
@@ -741,30 +742,40 @@ input::placeholder{
     }
 
     .about-container .about-title{
-        display: block;
+        display: flex;
         width: 75%;
         font-size: 5vw;
-        padding: 28.9vh 0px 1.5vh 0px;
-        border-bottom: 1px solid #cacaca;
-        background-position: bottom -0.5vh left;
-        background-size: 22.2vw;
+        padding-bottom: 2vh;
+        border-bottom: 2px solid #cacaca;
     }
-
-    .about-container .about-title span:nth-child(1){
+    
+    .about-container .about-title .about-title-text{
+        display: block;
+        align-self: end;
+        font-size: 4.2vw;
+        line-height: 0.9;
+    }
+    
+    .about-container .about-title .about-title-text span:nth-child(1){
         font-size: 4.2vw;
         font-weight: 700;
     }
-
-    .about-container .about-title strong:nth-child(2){
+    
+    .about-container .about-title .about-title-text strong:nth-child(2){
         font-size: 4.2vw;
         font-weight: 500;
     }
-
-    .about-container .about-title span:nth-child(3){
-        padding: 0;
-        font-weight: 300;
+    
+    .about-container .about-title .about-title-text span:nth-child(3){
         font-size: 4.2vw;
-        border-bottom: transparent;
+        font-weight: 300;
+    }
+    
+    .about-container .about-title img{
+        width: 31%;
+        height: 100%;
+        object-fit: contain;
+        margin: 0 auto -2.13vh 0;
     }
 
     .about-container div{
