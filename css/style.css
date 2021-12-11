@@ -245,69 +245,10 @@ nav .social-links a:last-child{
 }
 
 /* event slider container */
-
 .events-slider{
     display: flex;
     padding: 6vh var(--global-padding) 2vh 0;
     overflow-x: scroll;
-}
-
-/* event cards */
-.events-slider .event-card{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 65%;
-    line-height: 1.8;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    color: #402615;
-}
-
-.event-card span{
-    margin-right: 10px;
-}
-
-.event-card .date{
-    font-weight: 500;
-    font-size: 5vw;
-}
-
-.event-card .time{
-    font-size: 4vw;
-}
-
-.event-card .event-details{
-    font-size: 4.8vw;
-}
-
-.event-card .event-details .event-type{
-    font-weight: 500;
-}
-
-.event-card .event-details .artist{
-    margin: 0;
-}
-
-.event-card .event-details .hyphen{
-    margin: 0 1px 0 -9px;
-}
-
-.event-card .location::before{
-    display: inline-block;
-    content: '';
-    height: 17px;
-    width: 12px;
-    margin-left: 1.5vw;
-    background: url(../img/icons/location-icon.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.event-card .cost{
-    font-weight: 500;
-    margin-bottom: 20px;
 }
 
 .colture-events-container .entry{
@@ -406,10 +347,6 @@ nav .social-links a:last-child{
     background: url(../img/icons/donate-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.donate-btn strong{
-    font-size: 4.5vw;
 }
 
 .about-container div:last-child img{
@@ -722,19 +659,31 @@ input::placeholder{
     .hero img{
         width: clamp(329px, 27vw, 50vw);
     }
-
+    
     .hero .menu-btn{
         margin-bottom: 5vh;
         padding: 1.5vw 2.8vw;
         font-size: clamp(3vw, 400px,3rem);
     }
-
-    .title span:first-child{
-        font-size: 9.7vw;
+    
+    .colture-events-container{
+        background-size: 100% 83.5%;
     }
 
-    .title span:last-child{
+    .colture-events-container .title span:first-child{
+        font-size: 8.7vw;
+    }
+
+    .colture-events-container .title span:last-child{
         font-size: 5vw;
+    }
+
+    .colture-events-container .events-slider{
+        flex-wrap: wrap;
+    }
+
+    .colture-events-container .entry{
+        font-size: 1.45vw;
     }
 
     .about-container{
@@ -796,5 +745,47 @@ input::placeholder{
     .about-container div:last-child{
         margin-top: 4vh;
     }
+
+    .about-container .donate-box{
+        width: 36vw;
+        margin: 0 auto;
+    }
+    
+    .donate-box p{
+        font-size: 1.6vw;
+    }
+    
+    .donate-box strong{
+        font-size: 1.9vw;
+        margin: 2vh 0;
+    }
+    
+    .donate-box .donate-btn{
+        width: 75%;
+        height: 6.8vh;
+        margin: 0 auto 5vh auto;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        font-size: 1.6vw;
+    }
+    
+    .donate-btn::after{
+        height: 1.9vw;
+        width: 1.9vw;
+        margin-right: 0.8vw;
+    }
+
+    .about-container div:last-child img{
+        width: 15%;
+    }
+    
+    .about-container div:last-child p{
+        display: inline-block;
+        text-align: center;
+        font-size: 2vw;
+    }
+    
 
 }
