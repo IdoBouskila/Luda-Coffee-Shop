@@ -783,9 +783,50 @@ input::placeholder{
     
     .about-container div:last-child p{
         display: inline-block;
+        margin-bottom: 8.3vh;
         text-align: center;
         font-size: 2vw;
     }
-    
 
+    .contact-container{
+        flex-direction: row-reverse;
+        background: linear-gradient(180deg, rgba(52, 32, 19, 0) 38.54%, rgba(0, 0, 0, 0.76) 100%), url(../img/backgrounds/contact-background-desktop.svg);
+    }
+    
+    .contact-container .contact-title{
+        margin: auto 0 5vh auto;
+    }
+
+    .contact-container .contact-title strong, .contact-title .second-title{
+        font-size: 5.5vw;
+    }
+    
+    .contact-container .form-container{
+        width: 30%;
+        margin: 0 0 auto auto;
+    }
+
+    .contact-container .form-container label{
+        font-size: 2.3vw;
+    }
+
+    .contact-container .form-container input{
+        padding: 2.05vw;
+    }
+
+    .contact-container .form-container input::placeholder{
+        font-size: 1.75vw;
+    }
+
+    .contact-container .form-container button{
+        font-size: 1.6vw;
+        margin-top: 6.25vh;
+    }
+
+    .contact-container .form-container button::after{
+        height: 1.6vw;
+        width: 1.6vw;
+    }
+
+    
 }
