@@ -555,6 +555,10 @@ input::placeholder{
     font-size: 4.3vw;
 }
 
+.idea-description img{
+    display: none;
+}
+
 
 .idea-description div:nth-child(1){
     margin: 1.7vh 0px;
@@ -724,7 +728,7 @@ input::placeholder{
         width: 31%;
         height: 100%;
         object-fit: contain;
-        margin: 0 auto -2.13vh 0;
+        margin: 0 auto -2.3vh 0;
     }
 
     .about-container div{
@@ -748,7 +752,7 @@ input::placeholder{
 
     .about-container .donate-box{
         width: 36vw;
-        margin: 0 auto;
+        margin: 12vh auto 0 auto;
     }
     
     .donate-box p{
@@ -790,7 +794,10 @@ input::placeholder{
 
     .contact-container{
         flex-direction: row-reverse;
-        background: linear-gradient(180deg, rgba(52, 32, 19, 0) 38.54%, rgba(0, 0, 0, 0.76) 100%), url(../img/backgrounds/contact-background-desktop.svg);
+        height: auto;
+        background: linear-gradient(180deg, rgba(52, 32, 19, 0) 38.54%, rgba(0, 0, 0, 0.76) 100%),
+                    url(../img/backgrounds/contact-background-desktop.svg);
+        background-size: cover;
     }
     
     .contact-container .contact-title{
@@ -819,13 +826,45 @@ input::placeholder{
     }
 
     .contact-container .form-container button{
+        width: 100%;
+        margin: 6.5vh 0 0 0;
         font-size: 1.6vw;
-        margin-top: 6.25vh;
     }
 
     .contact-container .form-container button::after{
         height: 1.6vw;
         width: 1.6vw;
+    }
+
+    .idea-description{
+        padding: var(--global-padding) var(--global-padding) var(--global-padding) 0;
+    }
+    
+    .idea-description div img{
+        display: inline-block;
+    }
+
+    .idea-description .first-paragraph, .idea-description .second-paragraph{
+        display: flex;
+    }
+
+    .idea-description .first-paragraph strong:first-child{
+        color: #703F0F;
+    }
+
+    .idea-description .first-paragraph p[data-mobile-display="false"]{
+        display: block;
+        font-weight: 600;
+    }
+
+    .idea-description .first-paragraph p:last-child{
+        width: 78%;
+        line-height: 1.7;
+        font-size: 2.0vw;
+    }
+
+    .idea-description .first-paragraph img {
+        width: 100%;
     }
 
     
