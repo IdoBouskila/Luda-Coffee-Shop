@@ -8,11 +8,6 @@ function _(selector){
     return document.querySelector(selector);
 }
 
-
-
-
-
-
 const template = document.createElement('template');
 //  48 vw
 template.innerHTML = `

@@ -1,9 +1,13 @@
 const scrollButton = _('.scroll-arrow');
 const contactBtn = _('.contact-container .form-container button');
 
+
 contactBtn.addEventListener('click', e => {
-    contactBtn.classList.add('disabled');
-    e.preventDefault();
+    if(!contactBtn.classList.contains('disabled')){
+        contactBtn.classList.add('disabled');
+        e.preventDefault();
+        contactBtn.innerText = 'נשלח בהצלחה!';
+    }
 });
 
 scrollButton.addEventListener('click', e => {
