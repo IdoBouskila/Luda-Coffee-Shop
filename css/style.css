@@ -448,6 +448,15 @@ input::placeholder{
     background-size: contain;
 }
 
+
+/* disabled button stlye */
+button.disabled{
+    content: 'adadadada';
+    color: #4026158a;
+    background: #bbe1c3cc;
+    cursor: not-allowed;
+}
+
 .form-container p{
     align-self: center;
 }
@@ -936,7 +945,7 @@ input::placeholder{
     }
 
     .bottom-container{
-
+        background: linear-gradient(to top, var(--bottom-background-color) 60%, transparent 0);
     }
 
     .bottom-container .moments .moments-title{
@@ -963,6 +972,7 @@ input::placeholder{
 
     .bottom-container button.top-page{
         display: flex;
+        margin: 20.5vh auto 30vh auto;
         padding: 0.8vh 1.5vw;
         font-size: 1.7vw;
     }
@@ -985,7 +995,7 @@ input::placeholder{
     }
 
     .bottom-container .logos{
-        margin-top: 15vh
+        margin-top: 5vh;
     }
 
     .bottom-container .logos img {
