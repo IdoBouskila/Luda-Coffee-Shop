@@ -108,7 +108,7 @@ nav .social-links a:last-child{
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
-    z-index: 10000;
+    z-index: 999;
 }
 
 /* .menu-container label{
@@ -133,7 +133,7 @@ nav .social-links a:last-child{
     display: inline-block;
     height: 2px;
     width: 2.6rem;
-    background: var(--milk-color); */
+    background: var(--milk-color);
 }
 
 /* popup menu */
