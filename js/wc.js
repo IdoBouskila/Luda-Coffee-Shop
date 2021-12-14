@@ -24,17 +24,17 @@ template.innerHTML = `
                         width: 65vw; 
                         margin-left: 2vw;
                         line-height: 1.8;
-                        border-top-right-radius: 20px;
-                        border-top-left-radius: 20px;
+                        border-radius: 20px 20px 0 0;
                         background: #fff;
                         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
                         color: #402615;
                     }
                     
                     .event-card img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 20px 20px 0 0;
                         object-fit: cover;
-                        border-top-right-radius: 20px;
-                        border-top-left-radius: 20px;
                     }
 
                     .event-card span, div{

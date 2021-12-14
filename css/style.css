@@ -352,7 +352,7 @@ nav .social-links a:last-child{
 .about-container div:last-child img{
     width: 30%;
     display: block;
-    margin: 6vh auto;
+    margin: 10vh auto;
 }
 
 .about-container div:last-child p{
@@ -457,26 +457,61 @@ input::placeholder{
     background: linear-gradient(to top, var(--bottom-background-color) 65%, transparent 0);
 }
 
-.bottom-container .moments span{
+.bottom-container .moments .moments-title span{
     font-weight: 700;
     font-size: 10vw;
 }
 
-.moments p{
+.bottom-container .moments .moments-title p{
     margin-bottom: 4vh;
     line-height: 0.3;
     font-weight: 300;
     font-size: 8.3vw;
 }
 
-.moments .gallery img{
-    height: 23vw;
-    object-fit: cover;
+.bottom-container .moments .gallery{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.moments .gallery img:nth-child(3){
-    width: 26.5vw;
+.bottom-container .moments .gallery img{
+    width: 29vw;
+    object-fit: cover;
+    margin: 0.5vw;
 }
+
+.bottom-container .moments .gallery img:nth-child(3){
+    margin-left: 0;
+    flex-grow: 1;
+}
+
+.bottom-container .moments .gallery img:last-child{
+    margin-left: 0;
+    flex-grow: 1;
+}
+
+.bottom-container .gallery-bullets{
+    display: flex;
+    justify-content: center;
+    margin: 1vh 0 10vh 0;
+}
+
+.bottom-container .gallery-bullets span{
+    display: inline-block;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 0.3vw 0 0.3vw;
+    opacity: 0.4;
+    border-radius: 50%;
+    background: #fff;
+    /* cursor: pointer; */
+    transition: opacity 0.3s ease-in;
+}
+
+.bottom-container .gallery-bullets span.active{
+    opacity: 1;
+}
+
 
 .bottom-container .top-page{
     display: block;
@@ -634,7 +669,7 @@ input::placeholder{
         margin: 0 0.5vw;
     }
 
-    .menu-container button, a{
+    .menu-container button, .menu-container a{
         font-size: 1.4vw;
         color: var(--milk-color);
         margin: 0 1.5vw
@@ -837,7 +872,7 @@ input::placeholder{
     }
 
     .idea-description{
-        padding: var(--global-padding) var(--global-padding) var(--global-padding) 0;
+        padding: var(--global-padding) 0 var(--global-padding) 0;
     }
     
     .idea-description div img{
@@ -848,13 +883,19 @@ input::placeholder{
         display: flex;
     }
 
+    .idea-description .first-paragraph div{
+        margin-right: var(--global-padding);
+    }
+
     .idea-description .first-paragraph strong:first-child{
+        font-weight: 400;
         color: #703F0F;
     }
 
     .idea-description .first-paragraph p[data-mobile-display="false"]{
         display: block;
-        font-weight: 600;
+        margin-bottom: 3vh;
+        font-weight: 500;
     }
 
     .idea-description .first-paragraph p:last-child{
@@ -866,6 +907,92 @@ input::placeholder{
     .idea-description .first-paragraph img {
         width: 100%;
     }
+
+    .idea-description .second-paragraph{
+        background-image: url(../img/vectors/blop-vector.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .idea-description .second-paragraph img{
+        display: inline-block;
+        width: 21.5%;
+        height: 21.5%;
+        margin: auto 10vw auto 10vw;
+    }
+
+    .idea-description .second-paragraph div{
+        margin: 20vh 6vw 20vh auto;
+        width: 30.5%;
+    }
+
+    .idea-description .second-paragraph strong{
+        font-size: 5vw;
+    }
+
+    .idea-description .second-paragraph p, .idea-description .second-paragraph p strong{
+        font-size: 2vw;
+    }
+
+    .bottom-container{
+
+    }
+
+    .bottom-container .moments .moments-title{
+        text-align: center;
+    }
+
+    .bottom-container .moments .moments-title span, .bottom-container .moments .moments-title p{
+        display: inline-block;
+        font-size: 5vw;
+        margin: 0 4px;
+    }
+
+    .bottom-container .moments .moments-title::before{
+        content: '';
+        position: relative;
+        display: block;
+        width: 5.2vw;
+        height: 5.25vw;
+        margin: 0px auto -10px auto;
+        background-image: url(../img/icons/coffee-icon.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bottom-container button.top-page{
+        display: flex;
+        padding: 0.8vh 1.5vw;
+        font-size: 1.7vw;
+    }
+
+    .bottom-container button.top-page::after{
+        margin: auto 0.8vw auto auto;
+        width: 1.3vw;
+        height: 0.75vw;
+    }
+
+    .bottom-container .contact{
+        justify-content: center;
+    }
+
+    .bottom-container .contact a{
+        width: 3.5vw;
+        height: 3.5vw;
+        padding: 0;
+        margin: 0 0.4vw;
+    }
+
+    .bottom-container .logos{
+        margin-top: 15vh
+    }
+
+    .bottom-container .logos img {
+        width: 4vw;
+        object-fit: contain;
+    }
+
 
     
 }
