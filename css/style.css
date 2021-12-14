@@ -111,6 +111,31 @@ nav .social-links a:last-child{
     z-index: 10000;
 }
 
+/* .menu-container label{
+    width: 10vw;
+    height: 0.5vw;
+    background: var(--milk-color);
+    z-index: 999;
+}
+
+.menu-container label::before{
+    content: '';
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    width: 2.6rem;
+    background: var(--milk-color);
+}
+
+.menu-container label::after{
+    content: '';
+    position: relative;
+    display: inline-block;
+    height: 2px;
+    width: 2.6rem;
+    background: var(--milk-color); */
+}
+
 /* popup menu */
 .side-menu{
     position: fixed;
