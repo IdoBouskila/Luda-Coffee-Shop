@@ -511,17 +511,43 @@ button.disabled{
 }
 
 .bottom-container .moments .gallery{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 
+        'a b c' 
+        'd e e';
+    max-width: 75vw;
+    margin: auto;
 }
 
 .bottom-container .moments .gallery img{
-    width: 29vw;
+    --gap: 1vw;
     object-fit: cover;
-    margin: 0.5vw;
+    margin: calc( var( --gap ) / 2 );
+    width: calc( 100% - var( --gap ) );
+    max-height: 40vh;
 }
 
-.bottom-container .moments .gallery img:nth-child(3){
+.gallery img:nth-child(1){
+    grid-area: a;
+}
+
+.gallery img:nth-child(2){
+    grid-area: b;
+}
+
+.gallery img:nth-child(3){
+    grid-area: c;
+}
+
+.gallery img:nth-child(4){
+    grid-area: d;
+}
+
+.gallery img:nth-child(5){
+    grid-area: e;
+}
+
+/*.bottom-container .moments .gallery img:nth-child(3){
     margin-left: 0;
     flex-grow: 1;
 }
@@ -529,7 +555,7 @@ button.disabled{
 .bottom-container .moments .gallery img:last-child{
     margin-left: 0;
     flex-grow: 1;
-}
+} */
 
 .bottom-container .gallery-bullets{
     display: flex;
@@ -977,7 +1003,6 @@ button.disabled{
     }
 
     .idea-description .second-paragraph img{
-        display: inline-block;
         width: 21.5%;
         height: 21.5%;
         margin: auto 10vw auto 10vw;
