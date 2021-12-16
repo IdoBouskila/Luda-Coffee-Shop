@@ -709,11 +709,30 @@ button.disabled{
         height: 1.9vw;
         margin: 0 0.5vw;
     }
-
+    
     .menu-container button, .menu-container a{
         font-size: 1.4vw;
         color: var(--milk-color);
-        margin: 0 1.5vw
+        margin: 0 1.5vw;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .menu-container a::before{
+        position: relative;
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        background: var(--milk-color);
+        transition: all .3s ease-in-out;
+        opacity: 0;
+    }
+
+    .menu-container a:hover::before{
+        width: 100%;
+        opacity: 1;
+        transform: translateY(25px);
+        
     }
 
     .menu-container button{
@@ -895,6 +914,7 @@ button.disabled{
 
     .contact-container .form-container input{
         padding: 2.05vw;
+        background-size: 4%;
     }
 
     .contact-container .form-container input::placeholder{
