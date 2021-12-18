@@ -8,6 +8,7 @@ const aboutButton = _('.nav-about-btn');
 
 // scroll buttons
 const scrollButton = _('.scroll-arrow');
+const scrollTop = _('.top-page');
 
 contactBtn.addEventListener('click', e => {
     e.preventDefault();
@@ -32,6 +33,7 @@ __( '[data-toggle]' ).forEach( ( button ) => {
 } );
 
 
+// Scroll into View Buttons
 coltureButton.addEventListener('click', e => {
     e.preventDefault();
     scrollTo('.colture-events-container');
@@ -50,6 +52,11 @@ navContactButton.addEventListener('click', e => {
 scrollButton.addEventListener('click', e => {
     e.preventDefault();
     scrollTo('.colture-events-container');
+});
+
+scrollTop.addEventListener('click', e => {
+    e.preventDefault();
+    scrollTo('.hero');
 });
 
 function scrollTo(selector){

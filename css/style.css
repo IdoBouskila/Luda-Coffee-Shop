@@ -747,7 +747,7 @@ button.disabled{
     .menu-container a:hover::before{
         width: 100%;
         opacity: 1;
-        transform: translateY(25px);
+        transform: translateY(2vw);
         
     }
 
