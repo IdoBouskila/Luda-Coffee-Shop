@@ -1,15 +1,5 @@
-const menuIcon = _('.menu-container label');
-
-menuIcon.addEventListener('click', e => {
-    menuIcon.classList.toggle('menu-open');
-})
-
-function _(selector){
-    return document.querySelector(selector);
-}
-
 const template = document.createElement('template');
-//  48 vw
+
 template.innerHTML = `
 
                     <style>
