@@ -737,7 +737,7 @@ button.disabled{
         position: relative;
         content: '';
         display: block;
-        width: 0%;
+        width: 100%;
         height: 2px;
         background: var(--milk-color);
         transition: all .3s ease-in-out;
@@ -745,7 +745,6 @@ button.disabled{
     }
 
     .menu-container a:hover::before{
-        width: 100%;
         opacity: 1;
         transform: translateY(2vw);
         
@@ -795,6 +794,7 @@ button.disabled{
 
     .colture-events-container .events-slider{
         flex-wrap: wrap;
+        overflow-x: hidden;
     }
 
     .colture-events-container .entry{
