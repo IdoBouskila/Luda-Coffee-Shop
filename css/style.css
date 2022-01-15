@@ -771,13 +771,13 @@ button.disabled{
     }
 
     .hero img{
-        width: clamp(329px, 27vw, 50vw);
+        width: min(500px, 30vw);
     }
     
     .hero .menu-btn{
         margin-bottom: 5vh;
         padding: 1.5vw 2.8vw;
-        font-size: clamp(3vw, 400px,3rem);
+        font-size: max(3vw, 29px);
     }
     
     .colture-events-container{
