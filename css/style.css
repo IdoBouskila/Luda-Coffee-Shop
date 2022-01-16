@@ -140,7 +140,7 @@ nav .social-links a:last-child{
     top: 0;
     left: 0;
     /* background: rgba(139, 110, 88, 0.6); */
-    background: linear-gradient(315deg, #772f1ae6 0%, #8b6e5899 74%);
+    background: linear-gradient(315deg, #772f1a 0%, #8b6e58d4 74%);
     flex-direction: column;
     align-items: center;
     -webkit-backdrop-filter: blur(4.5px);
