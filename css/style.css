@@ -105,7 +105,7 @@ nav .social-links a:last-child{
     width: 9vw;
     height: 0.5vw;
     background: var(--milk-color);
-    transition: .3s all;
+    transition: .3s all linear;
     border-radius: 20px;
 }
 
