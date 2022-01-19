@@ -723,7 +723,7 @@ button.disabled{
         bottom: 3px;
         width: 100%;
         height: 2px;
-        background: var(--bottom-background-color);
+        background: var(--event-background-color);
         transform: scaleX(0);
         transform-origin: bottom left;
         transition: transform .3s ease-out;
