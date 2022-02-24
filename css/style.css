@@ -670,6 +670,13 @@ button.disabled{
     margin: 1.7vh 0px;
 }
 
+.credits{
+    padding: 1.2vh 0px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+
 @keyframes UpDown{
     0%, 100%{
       transform: translate3d(0, 0, 0);
@@ -1053,7 +1060,4 @@ button.disabled{
         width: 4vw;
         object-fit: contain;
     }
-
-
-    
 }
