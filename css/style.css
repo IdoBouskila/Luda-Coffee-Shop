@@ -921,7 +921,8 @@ button.disabled{
     }
 
     .contact-container .form-container input{
-        padding: 2.05vw;
+        padding: 1.35vw;
+        font-size: 1.5vw;
         background-size: 4%;
     }
 

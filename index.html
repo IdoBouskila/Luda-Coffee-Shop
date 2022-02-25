@@ -8,8 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@400;500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logos/luda-logo.svg">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="./js/script.js" defer></script>
     <script src="./js/event-card.js" defer></script>
+    <script src="./js/email.js" defer></script>
     <title>Luda Coffee Shop</title>
 </head>
 
@@ -154,7 +157,7 @@
                 <span class="second-title">הצטרפו אלינו לצוות!</span>
             </div>
 
-            <div class="form-container">
+            <div id="contact-form" class="form-container">
                 <form action="" method="get">
                     <label for="name">
                         <strong>שם מלא</strong>
@@ -164,7 +167,7 @@
                         <strong>טלפון</strong>
                     </label>
                     <input type="tel" name="phone" id="phone" placeholder="הכנס מספר">
-                    <button type="submit">נעים מאוד, צרו איתי קשר</button>
+                    <button id="submit-btn" type="submit">נעים מאוד, צרו איתי קשר</button>
                 </form>
             </div>
         </div>
