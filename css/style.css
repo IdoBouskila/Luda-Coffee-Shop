@@ -514,40 +514,44 @@ button.disabled{
     font-size: 8.3vw;
 }
 
-.bottom-container .moments .gallery{
+.bottom-container .moments .gallery {
     display: grid;
+}
+
+.bottom-container .moments .gallery div{
+    display: grid;
+    grid-area: 1 / 2;
     grid-template-areas: 
         'a b c' 
         'd e e';
     max-width: 75vw;
-    margin: auto;
 }
 
-.bottom-container .moments .gallery img{
+.bottom-container .moments .gallery div img{
     --gap: 1vw;
     object-fit: cover;
-    margin: calc( var( --gap ) / 2 );
-    width: calc( 100% - var( --gap ) );
+    margin: calc(var( --gap ) / 2);
+    width: calc(100% - var( --gap ));
     max-height: 40vh;
 }
 
-.gallery img:nth-child(1){
+.gallery div img:nth-child(1){
     grid-area: a;
 }
 
-.gallery img:nth-child(2){
+.gallery div img:nth-child(2){
     grid-area: b;
 }
 
-.gallery img:nth-child(3){
+.gallery div img:nth-child(3){
     grid-area: c;
 }
 
-.gallery img:nth-child(4){
+.gallery div img:nth-child(4){
     grid-area: d;
 }
 
-.gallery img:nth-child(5){
+.gallery div img:nth-child(5){
     grid-area: e;
 }
 

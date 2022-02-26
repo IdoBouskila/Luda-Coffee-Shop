@@ -20,8 +20,26 @@ function sendMail() {
         });
 }
 
+function formValidation() {    
+    
+}
 
 submitBtn.addEventListener('click', e => {
+    e.preventDefault();
+
+    if(submitBtn.classList.contains('disabled')) {
+        alert('.הטופס הקודם התקבל, לשליחת טופס נוסף רענן את הדף');
+        return;
+    }
+
+    if((name.value).trim() == "" || (phone.value).trim() == "") {
+        alert('נא למלא את הטופס בהתאם.');
+        return;
+    }
+    
+    submitBtn.classList.add('disabled');
+    submitBtn.innerText = 'נשלח בהצלחה!';
+
     sendMail();
 });
 

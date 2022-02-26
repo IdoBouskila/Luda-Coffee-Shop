@@ -1,6 +1,3 @@
-// contact form submit button
-const contactBtn = _('.contact-container .form-container button');
-
 // navigation button
 const navContactButton = _('.nav-contact-btn');
 const coltureButton = _('.nav-colture-btn');
@@ -9,15 +6,6 @@ const aboutButton = _('.nav-about-btn');
 // scroll buttons
 const scrollButton = _('.scroll-arrow');
 const scrollTop = _('.top-page');
-
-contactBtn.addEventListener('click', e => {
-    e.preventDefault();
-    
-    if(!contactBtn.classList.contains('disabled')){
-        contactBtn.classList.add('disabled');
-        contactBtn.innerText = 'נשלח בהצלחה!';
-    }
-});
 
 // every button that has data-toggle will open the mobile nav
 __( '[data-toggle]' ).forEach( ( button ) => {
