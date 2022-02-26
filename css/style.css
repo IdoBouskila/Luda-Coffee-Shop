@@ -372,6 +372,7 @@ nav .social-links a:last-child{
     background: #2171A7;
     box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
     color: #fff;
+    transition: .4s all;
 }
 
 .donate-btn::after{
@@ -383,6 +384,10 @@ nav .social-links a:last-child{
     background: url(../img/icons/donate-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+donate-btn:hover {
+    background: rgba(33, 113, 167, 0.5);
 }
 
 .about-container div:last-child img{
@@ -470,6 +475,7 @@ input::placeholder{
     border-style: none;
     color: #402615;
     background: #bbe1c3;
+    transition: .4s all;
 }
 
 .form-container button::after{
@@ -482,6 +488,10 @@ input::placeholder{
     background: url(../img/icons/contact-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.form-container button:hover {
+    opacity: 0.6;
 }
 
 
@@ -516,11 +526,23 @@ button.disabled{
 
 .bottom-container .moments .gallery {
     display: grid;
+    justify-content: center;
+}
+
+.bottom-container .moments .gallery .slide-three {
+    animation: fadeOut 10s infinite ease-in;
+    animation-delay: 7s;
+    opacity: 0;
+}
+
+.bottom-container .moments .gallery .slide-two {
+    animation: fadeOut 10s infinite ease-in;
+    opacity: 0;
 }
 
 .bottom-container .moments .gallery div{
     display: grid;
-    grid-area: 1 / 2;
+    grid-area: 1 / 1;
     grid-template-areas: 
         'a b c' 
         'd e e';
@@ -528,75 +550,46 @@ button.disabled{
 }
 
 .bottom-container .moments .gallery div img{
+    --width: calc(25vw - var(--gap));
     --gap: 1vw;
     object-fit: cover;
-    margin: calc(var( --gap ) / 2);
-    width: calc(100% - var( --gap ));
+    margin: calc(var(--gap) / 2);
+    width: var(--width);
+    height: 20vw;
     max-height: 40vh;
 }
 
-.gallery div img:nth-child(1){
+.bottom-container .moments .gallery div img:nth-child(1){
     grid-area: a;
 }
 
-.gallery div img:nth-child(2){
+.bottom-container .moments .gallery div img:nth-child(2){
     grid-area: b;
 }
 
-.gallery div img:nth-child(3){
+.bottom-container .moments .gallery div img:nth-child(3){
     grid-area: c;
 }
 
-.gallery div img:nth-child(4){
+.bottom-container .moments .gallery div img:nth-child(4){
     grid-area: d;
 }
 
-.gallery div img:nth-child(5){
+.bottom-container .moments .gallery div img:nth-child(5){
+    width: calc(var( --width) * 2 + var(--gap));
     grid-area: e;
 }
-
-/*.bottom-container .moments .gallery img:nth-child(3){
-    margin-left: 0;
-    flex-grow: 1;
-}
-
-.bottom-container .moments .gallery img:last-child{
-    margin-left: 0;
-    flex-grow: 1;
-} */
-
-.bottom-container .gallery-bullets{
-    display: flex;
-    justify-content: center;
-    margin: 1vh 0 8vh 0;
-}
-
-.bottom-container .gallery-bullets span{
-    display: inline-block;
-    width: 1.5vw;
-    height: 1.5vw;
-    margin: 0 0.3vw 0 0.3vw;
-    opacity: 0.4;
-    border-radius: 50%;
-    background: #fff;
-    /* cursor: pointer; */
-    transition: opacity 0.3s ease-in;
-}
-
-.bottom-container .gallery-bullets span.active{
-    opacity: 1;
-}
-
 
 .bottom-container .top-page{
     display: block;
     padding: 0.8vh 6.5vw;
-    margin: 0 auto 12vh auto;
+    margin: 1.5vh auto 12vh auto;
     font-size: 3.5vw;
     border-radius: 50px;
     border: 2px solid #000;
     background: transparent;
     color: #000;
+    transition: .4s all;
 }
 
 .bottom-container .top-page::after{
@@ -610,6 +603,11 @@ button.disabled{
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.bottom-container .top-page:hover {
+    background: #0000000d;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+  }
 
 .bottom-container .contact{
     display: flex;
@@ -628,6 +626,11 @@ button.disabled{
     background-repeat: no-repeat;
     border: 1px solid var(--main-text-color);
     border-radius: 50%;
+    transition: .4s all ease-in-out;
+}
+
+.bottom-container .contact a:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
 }
 
 .bottom-container .contact .fb{
@@ -681,7 +684,21 @@ button.disabled{
     background: #000;
 }
 
-@keyframes UpDown{
+@keyframes fadeOut {
+    0% {
+      opacity: 0;
+    }
+    
+    5%, 50% {
+      opacity: 1;
+    }
+
+    55%, 100% {
+      opacity: 0;
+    }
+}
+
+@keyframes UpDown {
     0%, 100%{
       transform: translate3d(0, 0, 0);
     }
@@ -699,10 +716,6 @@ button.disabled{
 
     [data-desktop-display="false"]{
         display: none;
-    }
-
-    .hero{
-
     }
 
     header{
@@ -1035,8 +1048,8 @@ button.disabled{
 
     .bottom-container button.top-page{
         display: flex;
-        margin: 20.5vh auto 30vh auto;
         padding: 0.8vh 1.5vw;
+        margin: 2.5vh auto 20vh auto;
         font-size: 1.7vw;
     }
 
