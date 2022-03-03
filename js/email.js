@@ -20,10 +20,6 @@ function sendMail() {
         });
 }
 
-function formValidation() {    
-    
-}
-
 submitBtn.addEventListener('click', e => {
     e.preventDefault();
 
