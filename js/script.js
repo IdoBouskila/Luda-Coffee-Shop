@@ -20,33 +20,6 @@ __( '[data-toggle]' ).forEach( ( button ) => {
     } );
 } );
 
-
-// Scroll into View Buttons
-coltureButton.addEventListener('click', e => {
-    e.preventDefault();
-    scrollTo('.colture-events-container');
-});
-
-aboutButton.addEventListener('click', e => {
-    e.preventDefault();
-    scrollTo('.about-container');
-});
-
-navContactButton.addEventListener('click', e => {
-    e.preventDefault();
-    scrollTo('.contact-container');
-});
-
-scrollButton.addEventListener('click', e => {
-    e.preventDefault();
-    scrollTo('.colture-events-container');
-});
-
-scrollTop.addEventListener('click', e => {
-    e.preventDefault();
-    scrollTo('.hero');
-});
-
 function scrollTo(selector){
     _(selector).scrollIntoView({
         behavior: 'smooth'

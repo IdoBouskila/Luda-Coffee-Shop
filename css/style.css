@@ -6,6 +6,10 @@
     --milk-color:#f4efea;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -526,7 +530,6 @@ button.disabled{
 
 .bottom-container .moments .gallery {
     display: grid;
-    justify-content: center;
 }
 
 .bottom-container .moments .gallery .slide-three {
@@ -546,11 +549,10 @@ button.disabled{
     grid-template-areas: 
         'a b c' 
         'd e e';
-    max-width: 75vw;
 }
 
 .bottom-container .moments .gallery div img{
-    --width: calc(25vw - var(--gap));
+    --width: calc(29.2vw - var(--gap));
     --gap: 1vw;
     object-fit: cover;
     margin: calc(var(--gap) / 2);
@@ -579,6 +581,7 @@ button.disabled{
     width: calc(var( --width) * 2 + var(--gap));
     grid-area: e;
 }
+
 
 .bottom-container .top-page{
     display: block;
@@ -732,7 +735,7 @@ button.disabled{
         margin: 0 0.5vw;
     }
     
-    .menu-container button, .menu-container a{
+    .menu-container a{
         font-size: 1.4vw;
         color: var(--milk-color);
         margin: 0 1.5vw;
@@ -757,26 +760,6 @@ button.disabled{
         opacity: 1;
         transform: scaleX(1);
         transform-origin: bottom right;
-    }
-
-    .menu-container button{
-        display: flex;
-        align-items: center;
-        padding: 0vh 1.5vw;
-        border-radius: 3px;
-        border: 1px solid var(--milk-color);
-        background: transparent;
-    }
-    
-    .menu-container button::before{
-        content: '';
-        display: inline-block;
-        width: 1.5vw;
-        height: 1.5vw;
-        margin-left: 0.5vw;
-        background: url(../img/icons/menu-btn-icon.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
     }
 
     .hero img{
@@ -893,6 +876,11 @@ button.disabled{
         align-items: center;
         align-content: center;
         font-size: 1.6vw;
+        transition: opacity .4s;
+    }
+    
+    .donate-box .donate-btn:hover{
+        opacity: 0.75;
     }
     
     .donate-btn::after{
@@ -1044,6 +1032,14 @@ button.disabled{
         background-image: url(../img/icons/coffee-icon.svg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    
+    .bottom-container .moments .gallery {
+        justify-content: center;
+    }
+    
+    .bottom-container .moments .gallery div img{
+        --width: calc(27vw - var(--gap));
     }
 
     .bottom-container button.top-page{

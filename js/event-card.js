@@ -77,7 +77,7 @@ template.innerHTML = `
                     @media all and (min-width: 820px){
                         .event-card{
                             width: 21vw;
-                            height: 86%;
+                            height: 90%;
                             margin-top: 2vw;
                         }
 
