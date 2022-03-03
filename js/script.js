@@ -20,6 +20,11 @@ __( '[data-toggle]' ).forEach( ( button ) => {
     } );
 } );
 
+scrollTop.addEventListener('click', e => {
+    e.preventDefault();
+    scrollTo('.hero');
+});
+
 function scrollTo(selector){
     _(selector).scrollIntoView({
         behavior: 'smooth'
